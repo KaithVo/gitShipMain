@@ -210,6 +210,10 @@ class Person {
     Font.draw(320, 90, 4, _p, _e, _a, _c, _e, _exclam);
     Font.draw(320, 130, 4, _2);
     Font.draw(320, 170, 4, _3);
+    Font.draw(320, 50, 4, _w, _e, _space, _c, _o, _m, _e, _space, _i, _n);
+    Font.draw(320, 90, 4, _p, _e, _a, _c, _e, _exclam);
+    Font.draw(320, 130, 4, _2);
+    Font.draw(320, 170, 4, _3);
 <<<<<<< HEAD
     Font.draw(320, 50, 4, _w, _e, _l, _c, _o, _m, _e, _space, _t, _o);
     Font.draw(320, 90, 4, _n, _e, _w, _space, _t, _o, _r, _o, _n, _t, _o, _exclam);
@@ -233,5 +237,9 @@ class Person {
       Font.draw(320, 130, 4, _t, _e, _c, _h, _n, _o, _l, _o, _g, _y, _comma);
       Font.draw(320, 170, 4, _m, _e, _r, _g, _e, _space, _i, _t, _space, _i, _n, _exclam);
     }
+    Font.draw(320, 50, 4, _h, _o, _m, _e, _space, _t, _o, _space, _t, _h, _e);
+    Font.draw(320, 90, 4, _1, _s, _t, _space, _t, _i, _m, _m, _i, _e, _s);
+    Font.draw(320, 130, 4, _i, _n, _space, _o, _u, _t, _e, _r, _dash);
+    Font.draw(320, 170, 4, _s, _p, _a, _c, _e, _exclam, _space, _colon, _dash, _rParen);
   }
 }
