@@ -18,11 +18,7 @@ class Person {
   Letter[] display = { _a, _b, _c };
   
   Person(){
-<<<<<<< HEAD
-    SetIdentity(0);
-=======
-    SetIdentity(1);
->>>>>>> SCAETColony
+    SetIdentity(2);
   }
   
   void SetIdentity(int i){
@@ -100,7 +96,9 @@ class Person {
   void backdrop(){
     //fill left half of screen with something
     //0, 0 --> 12, 11.25
+    fill(grey);
     fill(#46937C);
+    fill(#021F5D);
     rect(0, 0, width, 281.25);
   }
   
@@ -208,6 +206,10 @@ class Person {
     //12 $ per line, 4 lines max --> 48 character message
     //+40 in y for each line at font 4
     fill(shirt);
+    Font.draw(320, 50, 4, _w, _e, _space, _c, _o, _m, _e, _space, _i, _n);
+    Font.draw(320, 90, 4, _p, _e, _a, _c, _e, _exclam);
+    Font.draw(320, 130, 4, _2);
+    Font.draw(320, 170, 4, _3);
 <<<<<<< HEAD
     Font.draw(320, 50, 4, _w, _e, _l, _c, _o, _m, _e, _space, _t, _o);
     Font.draw(320, 90, 4, _n, _e, _w, _space, _t, _o, _r, _o, _n, _t, _o, _exclam);
@@ -219,5 +221,17 @@ class Person {
     Font.draw(320, 130, 4, _s, _p, _r, _e, _a, _d, _space, _t, _h, _e);
     Font.draw(320, 170, 4,   _a, _w, _e, _s, _o, _m, _e, _exclam);
 >>>>>>> SCAETColony
+    char[] e = binary(healthbar.checksum).toCharArray();
+    if(e[e.length-4] == '1' && e[e.length-8] == '0'){
+      Font.draw(320, 50, 4, _c, _a, _n, _space, _y, _o, _u, _space, _h, _e, _l, _p);
+      Font.draw(320, 90, 4, _u, _s, _space, _s, _c, _r, _a, _p);
+      Font.draw(320, 130, 4, _t, _h, _i, _s, _space, _s, _p, _a, _c, _e);
+      Font.draw(320, 170, 4, _s, _t, _a, _t, _i, _o, _n, _space, _exclam);
+    } else {
+      Font.draw(320, 50, 4, _w, _e, _space, _n, _e, _e, _d, _space, _y, _o, _u, _r);
+      Font.draw(320, 90, 4, _g, _i, _t, _dash, _f, _l, _e, _e, _t);
+      Font.draw(320, 130, 4, _t, _e, _c, _h, _n, _o, _l, _o, _g, _y, _comma);
+      Font.draw(320, 170, 4, _m, _e, _r, _g, _e, _space, _i, _t, _space, _i, _n, _exclam);
+    }
   }
 }
